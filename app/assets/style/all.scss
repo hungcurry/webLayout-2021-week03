@@ -1,0 +1,25 @@
+// --------base--------
+@import "./public/_reset.scss";
+@import "./public/_variable.scss";
+@import "./public/_mixin.scss";
+@import "./public/_base.scss";
+@import "./utilities/utilities.scss";
+
+// ------layout--------
+@import "./layout/_grid.scss";
+@import "./layout/_header.scss";
+
+
+
+// ------pages---------
+@import "./pages/_index.scss";
+
+
+
+// ------utilities-----
+@import "./utilities/background.scss";
+@import "./utilities/border.scss";
+@import "./utilities/image.scss";
+@import "./utilities/list.scss";
+@import "./utilities/size.scss";
+@import "./utilities/text.scss";
