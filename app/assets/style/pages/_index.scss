@@ -1,9 +1,45 @@
 * {
-	// outline: 1px solid red;
+	outline: 1px solid red;
 }
 /*-------------------------*/
-/* banner
+/* heroImage
 ---------------------------*/
+.heroImage {
+  background-image: url("../../assets/images/index/banner-375.png");
+  height: 39.4rem;
+  @media screen and (min-width: $mq768) {
+		background-image: url("../../assets/images/index/banner-768.png");
+    height: 84rem;
+  }
+  @media screen and (min-width: $mq1024) {
+		background-image: url("../../assets/images/index/banner.png");
+  }
+  &＿inner {
+    text-align: right;
+		color: $text-primary;
+		line-height: 1.5;
+  }
+  span:first-child{
+		font-size: 1.6rem;
+		display: block;
+    @media screen and (min-width: $mq768) {
+			font-size: $font-m ;
+    }
+    @media screen and (min-width: $mq1024) {
+			font-size: 3.6rem ;
+    }
+  }
+  .heroImage＿title{
+		font-size: $font-xl ;
+    @media screen and (min-width: $mq768) {
+			font-size: $font-2xl ;
+    }
+    @media screen and (min-width: $mq1024) {
+			font-size: $font-3xl ;
+    }
+  }
+}
+
 
 
 
