@@ -1,6 +1,18 @@
 * {
 	outline: 1px solid red;
 }
+
+.subtitle {
+	font-size: $font-l;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+	@media screen and (min-width: $mq768) {
+		font-size: $font-xl;
+	}
+	@media screen and (min-width: $mq1024) {
+		font-size: $font-2xl;
+	}
+}
 /*-------------------------*/
 /* heroImage
 ---------------------------*/
@@ -16,7 +28,6 @@
   }
   &＿inner {
     text-align: right;
-		color: $text-primary;
 		line-height: 1.5;
   }
   span:first-child{
@@ -39,9 +50,32 @@
     }
   }
 }
-
-
-
+/*-------------------------*/
+/* profession
+---------------------------*/
+.profession {
+  background-color: $thirdly;
+	padding-top: 3.2rem ;
+	padding-bottom: 0.8rem ;
+	@media screen and (min-width: $mq768) {
+		padding-top: 4rem ;
+		padding-bottom: 2.4rem ;
+  }
+	@media screen and (min-width: $mq992) {
+		padding-top: 6rem ;
+		padding-bottom: 8rem ;
+  }
+	.itemGroup＿item{
+		max-width: 28.5rem;
+		> .icon{
+			color: $secondary;
+			font-size: 10rem;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1.6rem ;
+		}
+	}
+}
 
 
 
