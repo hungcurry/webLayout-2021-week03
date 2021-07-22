@@ -1,7 +1,12 @@
 * {
 	outline: 1px solid red;
 }
-
+.header{
+	display: none;
+}
+.heroImage{
+	display: none;
+}
 .subtitle {
 	font-size: $font-l;
 	line-height: 1.5;
@@ -12,6 +17,21 @@
 	@media screen and (min-width: $mq1024) {
 		font-size: $font-2xl;
 	}
+}
+%box{
+	padding-top: 3.2rem ;
+	padding-bottom: 4rem ;
+	@media screen and (min-width: $mq768) {
+		padding-top: 4rem ;
+		padding-bottom: 5.6rem ;
+  }
+	@media screen and (min-width: $mq992) {
+		padding-top: 6rem ;
+		padding-bottom: 8rem ;
+  }
+}
+.Roboto{
+	font-family: 'Roboto', sans-serif;
 }
 /*-------------------------*/
 /* heroImage
@@ -54,25 +74,91 @@
 /* profession
 ---------------------------*/
 .profession {
-  background-color: $thirdly;
-	padding-top: 3.2rem ;
-	padding-bottom: 0.8rem ;
-	@media screen and (min-width: $mq768) {
-		padding-top: 4rem ;
-		padding-bottom: 2.4rem ;
-  }
-	@media screen and (min-width: $mq992) {
-		padding-top: 6rem ;
-		padding-bottom: 8rem ;
-  }
+	@extend %box;
 	.itemGroup＿item{
 		max-width: 28.5rem;
-		> .icon{
+		> .material-icons-outlined{
 			color: $secondary;
 			font-size: 10rem;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 1.6rem ;
+		}
+	}
+}
+/*-------------------------*/
+/* classic
+---------------------------*/
+.classic{
+	@extend %box;
+	.glassGroup{
+		&＿item{
+			position: relative;
+		}
+	}	
+	.imgBox{
+		width: 100%;
+		height: 13.4rem;
+		cursor: pointer;
+		@media screen and (min-width: $mq768) {
+			width: 39rem;
+			height: 16.8rem;
+		}
+		@media screen and (min-width: $mq992) {
+			width: 100%;
+			height: 32rem;
+		}
+		@media screen and (min-width: $mq1200) {
+			width: 63.5rem;
+			height: 32rem;
+		}
+		&.optical{
+			background-image: url("../../assets/images/index/product-1.png");
+		}
+		&.sunglasses{
+			background-image: url("../../assets/images/index/product-2.png");
+			transition: all .3s;
+			&:hover{
+				background-image: url("../../assets/images/index/product-2-color.png");
+			}
+		}
+		&.functional {
+			background-image: url("../../assets/images/index/product-3.png");
+		}
+	}
+	.txt{
+		@include center(row, nowrap, center, center);
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@media screen and (min-width: $mq768) {
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(0%, 0%);
+			justify-content: flex-start;
+		}
+		@media screen and (min-width: $mq992) {
+			justify-content: center;
+		}
+		@media screen and (min-width: $mq1024) {
+			justify-content: flex-start;
+		}
+		.glass＿icon{
+			font-size: 4rem;
+			@media screen and (min-width: $mq1024) {
+				font-size: 4.4rem;
+			}
+		}
+		h3{
+			font-size: 2.8rem;
+			line-height: 1.5;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+			@media screen and (min-width: $mq1024) {
+				font-size: $font-2xl;
+			}
 		}
 	}
 }
