@@ -1,6 +1,12 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.text-italic {
+  font-style: italic;
+}
+.text-normal {
+  font-style: normal;
+}
 .text-white {
   color: $white;
 }

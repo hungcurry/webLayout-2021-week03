@@ -128,10 +128,7 @@
 	}
 	.txt{
 		@include center(row, nowrap, center, center);
-		position:absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		@include posCenter();
 		@media screen and (min-width: $mq768) {
 			position: relative;
 			top: 0;
@@ -152,14 +149,60 @@
 			}
 		}
 		h3{
-			font-size: 2.8rem;
-			line-height: 1.5;
-			text-transform: uppercase;
+			@include fontSize(2.8rem , 1.5);
 			letter-spacing: 0.1rem;
 			@media screen and (min-width: $mq1024) {
 				font-size: $font-2xl;
 			}
 		}
+	}
+}
+/*-------------------------*/
+/* jointDesign
+---------------------------*/
+.jointDesign{
+	@extend %box;
+  background-image: url("../../assets/images/index/bg.png");
+	.jointBlock＿item{
+		padding-top: 84.347%;
+		display: block;
+		position: relative;
+		@media screen and (min-width: $mq768) {
+			padding-top: 84.259%;
+		}
+		&::before {
+			width:100%;
+			height: 100%;
+			content: "";
+			background-color: $white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.5;
+			transition: .3s;
+		}
+		&:hover{
+			&::before {
+				opacity: 0;
+			}
+		}
+	}	
+}
+.jointBlock＿item{
+	h3{
+		@include fontSize(3.2rem , 1.5);
+		@include posCenter();
+		width: 100%;
+		text-align: center;
+		@media screen and (min-width: $mq1024) {
+			font-size: 7.2rem;
+		}
+	}
+	&.Double{
+		background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png");
+	}
+	&.YOUTH{
+		background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
 	}
 }
 
