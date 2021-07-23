@@ -205,6 +205,50 @@
 		background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
 	}
 }
+/*-------------------------*/
+/* quote
+---------------------------*/
+.quote{
+	@extend %box;
+}
+.quoteGroup＿item{
+	.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+		border-radius: 0.4rem;
+		overflow: hidden;
+		box-shadow: 0px 0.2rem 0.6rem #00000029;
+	}
+	img{
+    height: 25.6rem;
+    object-fit: cover;
+  }
+}
+.quote＿content{
+	min-height: 20.4rem;
+	flex: 1 1 auto;
+  text-align: left;
+  border: 1px solid #DEE2E6;
+  border-top: 0px;
+  background-color: $white;
+	color: $text-thirdly;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+  .quoteName{
+		@include fontSize(1.4rem , 1.5);
+  }
+  .quoteText{
+		flex: 1 1 auto;
+  }
+  .quoteDay{
+		@include fontSize(1.4rem , 1.5);
+		color: $text-fourthly;
+  }
+}
 
 
 
