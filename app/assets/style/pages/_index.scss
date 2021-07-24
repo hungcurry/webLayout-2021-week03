@@ -1,12 +1,6 @@
 * {
 	outline: 1px solid red;
 }
-.header{
-	display: none;
-}
-.heroImage{
-	display: none;
-}
 .subtitle {
 	font-size: $font-l;
 	line-height: 1.5;
@@ -71,6 +65,9 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 1.6rem ;
+		}
+		p{
+			text-align: left;
 		}
 	}
 }
