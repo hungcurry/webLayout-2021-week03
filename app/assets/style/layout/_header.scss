@@ -97,9 +97,26 @@
     overflow: hidden;
     border-bottom: 0.1rem solid rgb(135, 14, 14);
     padding: 1.2rem 0;
+    position: relative;
     @media screen and (min-width: $mq768) {
       border-bottom: 0rem solid $white;
       padding: 0.8rem 0;
+    }
+    @media screen and (min-width: $mq1024) {
+      &:before{
+        content: " ";
+        position: absolute;
+        width: 0%;
+        height: 0.2rem;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        background-color: $thirdly;
+        transition: all 0.8s;
+      }
+      &:hover::before{
+        width: 100%;
+      }
     }
   }
 }
@@ -111,6 +128,7 @@
     top: 100%;
     left: 0;
     background-color: lighten($black, 25%);
+    opacity: 0.9;
     z-index: 400;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
