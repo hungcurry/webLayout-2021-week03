@@ -5,6 +5,7 @@
 @import "./public/_base.scss";
 @import "./utilities/utilities.scss";
 
+
 // ------layout--------
 @import "./layout/_grid.scss";
 @import "./layout/_header.scss";
@@ -14,6 +15,12 @@
 // ------pages---------
 @import "./pages/_index.scss";
 @import "./pages/_products.scss";
+
+
+
+// ------modules--------
+@import "./modules/_pagination.scss";
+
 
 
 // ------utilities-----
