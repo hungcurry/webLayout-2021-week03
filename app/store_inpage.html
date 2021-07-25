@@ -1,0 +1,76 @@
+---
+title: Classic門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <!-- banner -->
+  <section class="banner">
+    <div class="container h-100 d-flex align-items-end">
+      <div class="banner＿inner">
+        <h2 class="caption ps-1 ps-md-2 
+        border-start border-primary border-4 border-xl-8">門市資訊</h2>
+        <img class="banner＿icon ms-2" 
+        src="./assets/images/banner/icon-location.svg" alt="icon-location">
+      </div>
+    </div>
+  </section>
+  <!-- 資料區 -->
+  <section class="store container">
+    <div class="row">
+      <!-- 下拉選單 -->
+      <div class="selectGroup col-md-6 col-lg-5 d-flex align-items-center">
+        <h3 class="fw-400">選擇分店</h3>
+        <select class="areaDrown" name="area">
+          <option class="areaDrown_item" value="台北中山旗艦店">台北中山旗艦店</option>
+          <option class="areaDrown_item" value="台北松山旗艦店">台北松山旗艦店</option>
+          <option class="areaDrown_item" value="台北大安店">台北大安店</option>
+          <option class="areaDrown_item" value="台北信義旗艦店">台北信義旗艦店</option>
+          <option class="areaDrown_item" value="台北內湖店">台北內湖店</option>
+        </select>
+      </div>
+      <!-- 資料項目 -->
+      <div class="outer">
+        <!-- 商品 -->
+        <ul class="storeList row">
+          <li class="storeList＿item col-xl-5 mb-2 mb-md-3 mb-lg-4">
+            <div class="row d-xl-block">
+              <div class="col-md-6 col-xl-12">
+                <div class="storeList＿header bg-cover" 
+                style="background-image: url('./assets/images/store/locate06.jpg');">
+                </div>
+              </div>
+              <div class="storeList＿body col-md-6 col-xl-12">
+                <h4 class="storeList＿title">台北中山旗艦店</h4>
+                <ul class="storeList＿content">
+                  <li class="d-flex align-items-center align-items-lg-start mb-1">
+                    <img src="./assets/images/store/icon-phone.svg" alt="phone">
+                    <a href="tel:(02)000-1234">
+                      <p class="ms-1 text-black">電話：(02)000-1234</p>
+                    </a>
+                  </li>
+                  <li class="d-flex align-items-center align-items-lg-start mb-1">
+                    <img src="./assets/images/store/icon-clock.svg" alt="clock">
+                    <p class="ms-1">營業時間：10:00-21:00</p>
+                  </li>
+                  <li class="d-flex align-items-center align-items-lg-start">
+                    <img src="./assets/images/store/icon-map.svg" alt="map">
+                    <p class="ms-1">地址：台北市中山區南京東路25巷2-1號</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="col-xl-7 mb-2 mb-md-3 mb-lg-4">
+            <div class="storeMap position-relative">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4655215369216!2d121.53571001500654!3d25.05220628396382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1588596843282!5m2!1szh-TW!2stwframeborder=" 0"="" style="border: 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" allowfullscreen="" aria-hidden="false" tabindex="0" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+              </iframe>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

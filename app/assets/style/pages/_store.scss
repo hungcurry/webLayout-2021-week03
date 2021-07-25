@@ -60,7 +60,6 @@
     padding-bottom: 12.8rem;
   }
   .storeList＿header{
-    width:100%;
     height: 16.4rem;
     @media screen and (min-width: $mq1024) {
       height: 22.4rem;
@@ -112,4 +111,17 @@
     }
   }
 }
-
+//Google map
+.storeMap {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 66.48%;
+  iframe{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
