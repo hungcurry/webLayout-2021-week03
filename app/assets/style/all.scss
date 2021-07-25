@@ -12,14 +12,19 @@
 @import "./layout/_footer.scss";
 
 
+
 // ------pages---------
 @import "./pages/_index.scss";
 @import "./pages/_products.scss";
+@import "./pages/_store.scss";
+
 
 
 
 // ------modules--------
 @import "./modules/_pagination.scss";
+@import "./modules/_banner.scss";
+@import "./modules/_caption.scss";
 
 
 
