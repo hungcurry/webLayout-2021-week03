@@ -41,3 +41,22 @@ $('.js-pd-btn').on('click', function (){
 });
 
 
+// 部落格
+$('.blogMenu＿btn').on('click',function(){
+
+  $('.blogMenu＿btn').toggleClass('active');
+  $('.blogNav').toggleClass('active');
+  $('.js-blogMenu').toggleClass('active');
+
+});
+
+let len = 130; // 超過109個字以"..."取代
+$(".js-ellipsis").each(function(i){
+
+  if($(this).text().length>len){
+    $(this).attr("title",$(this).text());
+    let text= $(this).text().substring(0,len-1)+"...";
+    $(this).text(text);
+  }
+
+});
