@@ -2,16 +2,14 @@
 /* breadcrumb
 ---------------------------*/
 .breadcrumb{
-  padding: 0.8rem 0;
-  @media screen and (min-width: $mq1024) {
-    padding: 0.8rem 0 1.6rem 0;
-  }
+  padding-top: 0.8rem;
   @include center(row, wrap, flex-start , center);
   a{
-    @include fontSize(1.4rem , 2rem);
-    color: $text-black;
+    @include fontSize(1.4rem , 1.5);
+    display: block;
+    color: $black;
     @media screen and (min-width: $mq1024) {
-      @include fontSize(1.6rem , 2.2rem);
+      font-size: $font-base;
     }
   }
   a.active{

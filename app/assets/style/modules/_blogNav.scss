@@ -6,7 +6,7 @@
   position: fixed;
   top: 5rem;
   left: 0;
-  z-index: 999;
+  z-index: 800;
   transition: height .6s;
   @media screen and (min-width: $mq768) {
     width: auto;
@@ -65,10 +65,10 @@
   }
   &＿btn{
     display: block;
-    color: $black;
+    color: $white;
     text-align: center;
     border: 0.1rem solid #CED4DA;
-    background-color: $thirdly;
+    background-color: $secondary;
     display: flex;
     @media screen and (min-width: $mq768) {
       display: none;

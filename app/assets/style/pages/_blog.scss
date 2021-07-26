@@ -33,13 +33,17 @@
   //圖片區塊
   .imgBox{
     padding-bottom: 63%;
-    .image{
-      width: 100%;
-      height: 100%;
+    .imgBox＿fit{
+      @include width(100% , 100%);
       position: absolute;
       top: 0;
       left: 0;
+    }
+    .image{
+      width: 100%;
+      display: block;
       object-fit: cover;
+      height: inherit;
     }
   }
   //文章區塊
