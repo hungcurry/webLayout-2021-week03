@@ -60,3 +60,16 @@ $(".js-ellipsis").each(function(i){
   }
 
 });
+
+
+$('.card＿body').hide();
+$('.card＿item').eq(0).addClass('active');
+$('.card＿body').eq(0).show();
+$('.card＿item').on("click", function (e) {
+
+  e.preventDefault(); 
+  $(this).toggleClass('active').siblings().removeClass('active');
+  $(this).children().next().slideToggle();
+  $(this).siblings().children().next().slideUp();
+
+});

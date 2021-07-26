@@ -1,0 +1,65 @@
+/*-------------------------*/
+/* question
+---------------------------*/
+.question{
+  padding-bottom: 5.6rem;
+  @media screen and (min-width: $mq768) {
+    padding-bottom: 9.6rem;
+  }
+  @media screen and (min-width: $mq1024) {
+    padding-bottom: 16rem;
+  }
+  h3{
+    @include fontSize(2rem , 1.5);
+    margin-bottom: 2.4rem;
+    @media screen and (min-width: $mq768) {
+      font-size: $font-xl;
+      margin-bottom: 3.2rem;
+    }
+    @media screen and (min-width: $mq1024) {
+      margin-bottom: 3.6rem;
+    }
+  }
+  .card＿header,.card＿body{
+    padding: 1.6rem;
+    @media screen and (min-width: $mq768) {
+      padding: 1.6rem 2.4rem ;
+    }
+    @media screen and (min-width: $mq1024) {
+      padding: 2.2rem 3.8rem;
+    }
+  }
+}
+// 選項內容
+.card＿header{
+  h4{
+    font-size: $font-s;
+    line-height: 1.5;
+    @media screen and (min-width: $mq1024) {
+      font-size: $font-m;
+    }
+  }
+  .angle-up,.angle-down{
+    font-size: $font-xl;
+    color: $black;
+  }
+}
+.card＿body{
+  background-color: #f2f2f2;
+  p{
+    font-size:$font-s ;
+    @media screen and (min-width: $mq1024) {
+      font-size: $font-base;
+    }
+  }
+}
+// 狀態
+.card＿item:not(.active) .angle-up{
+  display: none;
+}
+.card＿item.active .angle-down{
+  display: none;
+}
+
+
+
