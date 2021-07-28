@@ -1,0 +1,78 @@
+$mq1366: 1366px;
+$mq1200: 1200px;
+$mq1024: 1024px;
+$mq992: 992px;
+$mq768: 768px;
+$mq480: 480px;
+$mq414: 414px;
+$mq375: 375px;
+$mq320: 320px;
+
+
+$primary : #aa0601;
+$secondary : #650300;
+$thirdly : #FBF2F2;
+$fourthly : #dcdcdc;
+$white : #fff;
+$black : #000;
+$bg-hover : #8a0702;
+$bg-swatchColor01 : #5F3E2D;
+$bg-swatchColor02 : #B75929;
+
+
+$text-white : #fff;
+$text-black : #000;
+$text-primary : #AA0601;
+$text-secondary : #650300;
+$text-thirdly: #212529;
+$text-fourthly: #707070;
+$text-blog-txt: #0a0a0a;
+$text-blog-data: #6c6c6c;
+
+
+$font-s: 1.4rem;
+$font-base: 1.6rem;
+$font-m: 2rem;
+$font-l: 2.4rem;
+$font-xl: 3.2rem;
+$font-2xl: 4.8rem;
+$font-3xl: 6.4rem;
+
+
+// Grid columns
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    "0": 0,
+    "1": 0.8rem,
+    "2": 1.6rem, 
+    "3": 2.4rem,
+    "4": 3.2rem, 
+    "5": 4rem, 
+    "6": 4.8rem, 
+  ),
+  $spacers
+);
+
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;

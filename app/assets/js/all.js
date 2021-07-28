@@ -73,3 +73,24 @@ $('.card＿item').on("click", function (e) {
   $(this).siblings().children().next().slideUp();
 
 });
+
+$(window).scroll(function () {
+  var HH = $(window).scrollTop();
+
+  if (HH > 900) {
+    $(".topBack").stop().animate({
+      "opacity": "1"
+    }, 500);
+    $(".topBack").on("click", clickFn);
+  } else {
+    $(".topBack").stop().animate({
+      "opacity": "0"
+    }, 500);
+  }
+});
+function clickFn() {
+  $(".topBack").off("click", clickFn);
+  $("html,body").stop().animate({
+    scrollTop: 0
+  }, 500);
+}

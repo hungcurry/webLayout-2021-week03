@@ -1,8 +1,8 @@
 // --------base--------
-@import "./public/_reset.scss";
-@import "./public/_variable.scss";
-@import "./public/_mixin.scss";
-@import "./public/_base.scss";
+@import "./helpers/_reset.scss";
+@import "./helpers/_variable.scss";
+@import "./helpers/_mixin.scss";
+@import "./helpers/_base.scss";
 @import "./utilities/utilities.scss";
 
 
@@ -28,7 +28,7 @@
 @import "./modules/_caption.scss";
 @import "./modules/_blogNav.scss";
 @import "./modules/_breadcrumb.scss";
-
+@import "./modules/_scrollTop.scss";
 
 
 // ------utilities-----
