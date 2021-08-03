@@ -1,3 +1,21 @@
+/*-------------------------*/
+/* mixin
+---------------------------*/ 
+@mixin desktop($mq : 1024){
+  @media(min-width: $mq + px){
+    @content;
+  }
+}
+@mixin pad($mq : 768){
+  @media(min-width: $mq + px){
+    @content;
+  }
+}
+@mixin mobile($mq: 375){
+  @media(min-width: $mq + px){
+    @content;
+  }
+}
 // 水平置中
 @mixin center($direction: row, $wrap: wrap, $main-center:center, $sub-center:center) {
     display: flex;

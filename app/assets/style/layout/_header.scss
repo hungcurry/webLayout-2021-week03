@@ -1,3 +1,6 @@
+/*-------------------------*/
+/* header 
+---------------------------*/ 
 .header {
   background-color: $primary;
   position: fixed;
@@ -96,10 +99,13 @@
     display: block;
     overflow: hidden;
     border-bottom: 0.1rem solid rgb(135, 14, 14);
-    padding: 1.2rem 0;
+    height: 5.5rem;
+    line-height: 5.5rem;
     position: relative;
     @media screen and (min-width: $mq768) {
       border-bottom: 0rem solid $white;
+      height: auto;
+      line-height: 1.5;
       padding: 0.8rem 0;
     }
     @media screen and (min-width: $mq1024) {

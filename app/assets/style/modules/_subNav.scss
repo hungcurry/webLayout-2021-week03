@@ -1,7 +1,7 @@
 /*-------------------------*/
-/* blogNav
+/* subNav
 ---------------------------*/
-.blogNav{
+.subNav{
   @include width(100% , 0vh);
   position: fixed;
   top: 5rem;
@@ -26,7 +26,7 @@
     margin: auto;
   }
 }
-.blogMenu{
+.subNavMenu{
   max-height: 0%;
   overflow: hidden;
   transition: all .6s;
@@ -81,15 +81,15 @@
   
 }
 // 狀態
-.blogNav.active{
+.subNavNav.active{
   height: 100vh;
 }
-.blogMenu.active{
+.subNavMenu.active{
   max-height: 100%;
 }
-.blogMenu＿btn:not(.active) .angle-up{
+.subNavMenu＿btn:not(.active) .angle-up{
   display: none;
 }
-.blogMenu＿btn.active .angle-down{
+.subNavMenu＿btn.active .angle-down{
   display: none;
 }

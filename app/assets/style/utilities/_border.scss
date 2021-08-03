@@ -1,17 +1,17 @@
 .border {
-  border: 1px solid #dee2e6!important;
+  border: 1px solid $border-base !important;
 }
 .border-top {
-  border-top: 1px solid #dee2e6!important;
+  border-top: 1px solid $border-base !important;
 }
 .border-end {
-  border-right: 1px solid #dee2e6!important;
+  border-right: 1px solid $border-base !important;
 }
 .border-bottom {
-  border-bottom: 1px solid #dee2e6!important;
+  border-bottom: 1px solid $border-base !important;
 }
 .border-start {
-  border-left: 1px solid #dee2e6!important;
+  border-left: 1px solid $border-base !important;
 }
 .border-primary {
   border-color: $primary !important;
@@ -21,6 +21,9 @@
 }
 .border-thirdly {
   border-color: $thirdly !important;
+}
+.border-fourthly {
+  border-color: $fourthly !important;
 }
 .border-top-0{
   border-top: 0 !important;

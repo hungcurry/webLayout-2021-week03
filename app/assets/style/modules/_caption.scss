@@ -1,7 +1,0 @@
-
-.caption{
-  @include fontSize(2.8rem , 1.5);
-  @media screen and (min-width: $mq768) {
-    font-size: $font-2xl;
-  }
-}

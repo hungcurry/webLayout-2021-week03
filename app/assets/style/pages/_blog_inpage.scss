@@ -1,6 +1,12 @@
 /*-------------------------*/
 /* blog_inPage
 ---------------------------*/
+main.blogMain{
+  margin-top: 8rem;
+  @media screen and (min-width:$mq768){
+    margin-top: 0rem;
+  }
+}
 .blogArticle{
   padding-bottom: 5.6rem;
   @media screen and (min-width: $mq768) {

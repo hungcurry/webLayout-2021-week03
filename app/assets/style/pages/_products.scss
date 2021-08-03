@@ -1,6 +1,12 @@
 /*-------------------------*/
 /* products
 ---------------------------*/
+main.productsMain{
+  margin-top: 8rem;
+  @media screen and (min-width:$mq768){
+    margin-top: 0rem;
+  }
+}
 .productsNav{
   width: 100%;
   position: fixed;

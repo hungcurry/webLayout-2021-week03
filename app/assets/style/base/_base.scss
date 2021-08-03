@@ -60,28 +60,12 @@
     text-decoration: none;
     word-break: break-all;
   }
+  * {
+    // outline: 1px solid red;
+  }
   main{
     margin-top: 5rem;
     @media screen and (min-width:$mq768){
       margin-top: 0rem;
     }
   }
-  main.productsMain{
-    margin-top: 8rem;
-    @media screen and (min-width:$mq768){
-      margin-top: 0rem;
-    }
-  }
-  main.blogMain{
-    margin-top: 8rem;
-    @media screen and (min-width:$mq768){
-      margin-top: 0rem;
-    }
-  }
-  * {
-    // outline: 1px solid red;
-  }
-  .Roboto{
-    font-family: 'Roboto', sans-serif;
-  }
-
