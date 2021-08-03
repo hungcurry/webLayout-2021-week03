@@ -2,14 +2,10 @@
 /* heroImage
 ---------------------------*/
 .heroImage {
-  background-image: url("../../assets/images/index/banner-375.png");
+	background-image: url("../../assets/images/index/banner1920.jpg");
   height: 39.4rem;
   @media screen and (min-width: $mq768) {
-		background-image: url("../../assets/images/index/banner-768.png");
     height: 84rem;
-  }
-  @media screen and (min-width: $mq1024) {
-		background-image: url("../../assets/images/index/banner.png");
   }
   &＿inner {
     text-align: right;

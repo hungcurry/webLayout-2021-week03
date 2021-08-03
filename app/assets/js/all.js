@@ -42,10 +42,10 @@ $('.js-pd-btn').on('click', function (){
 
 
 // 部落格
-$('.blogMenu＿btn').on('click',function(){
+$('.subNavMenu＿btn').on('click',function(){
 
-  $('.blogMenu＿btn').toggleClass('active');
-  $('.blogNav').toggleClass('active');
+  $('.subNavMenu＿btn').toggleClass('active');
+  $('.subNav').toggleClass('active');
   $('.js-blogMenu').toggleClass('active');
 
 });

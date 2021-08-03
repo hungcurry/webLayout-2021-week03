@@ -59,16 +59,16 @@
     }
     &:hover , &.active{
       @media screen and (min-width: $mq768) {
-        color: $white;
+        color: $black;
       }
     }
   }
   &＿btn{
     display: block;
-    color: $white;
+    color: $black;
     text-align: center;
     border: 0.1rem solid #CED4DA;
-    background-color: $secondary;
+    background-color: $thirdly;
     display: flex;
     @media screen and (min-width: $mq768) {
       display: none;
@@ -81,7 +81,7 @@
   
 }
 // 狀態
-.subNavNav.active{
+.subNav.active{
   height: 100vh;
 }
 .subNavMenu.active{
