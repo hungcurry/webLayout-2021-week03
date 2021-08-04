@@ -35,7 +35,7 @@
     flex-grow: 2;
   }
   .next{
-    background-color: $fourthly;
+    background-color: $thirdly;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 }
 .previous:hover,.next:hover{
-  background-color:$fourthly;
+  background-color: $thirdly;
   .page-link{
     color: $text-black;
   }

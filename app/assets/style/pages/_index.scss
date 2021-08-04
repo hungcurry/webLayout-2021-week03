@@ -65,6 +65,9 @@
 		width: 100%;
 		height: 13.4rem;
 		cursor: pointer;
+		position: relative;
+		filter:grayscale(1);
+    transition: all 0.6s;
 		@media screen and (min-width: $mq768) {
 			width: 39rem;
 			height: 16.8rem;
@@ -76,15 +79,29 @@
 		@media screen and (min-width: $mq1200) {
 			width: 63.5rem;
 			height: 32rem;
+			&::before{
+				@include width(10rem , 10rem);
+				content: " ";
+				position: absolute;
+				top: -4.5rem;
+				left: -4.5rem;
+				border: 0.5rem solid #CDDDCD;
+				z-index: -1;
+			}
+		}
+		&:hover{
+			filter:grayscale(0);
 		}
 		&.optical{
 			background-image: url("../../assets/images/index/product-10.jpg");
 		}
 		&.sunglasses{
-			background-image: url("../../assets/images/index/product-11.jpg");
-			transition: all .3s;
-			&:hover{
-				background-image: url("../../assets/images/index/product-11-color.jpg");
+			background-image: url("../../assets/images/index/product-11-color.jpg");
+			@media screen and (min-width: $mq1200) {
+				&::before{
+					right: -4.5rem;
+					left: initial;
+				}
 			}
 		}
 		&.functional {
@@ -122,12 +139,15 @@
 		}
 	}
 }
+
+
 /*-------------------------*/
 /* jointDesign
 ---------------------------*/
 .jointDesign{
 	@extend %box;
   background-image: url("../../assets/images/index/bg.png");
+	background-attachment: fixed;
 	.jointBlock＿item{
 		padding-top: 84.347%;
 		display: block;
@@ -177,6 +197,12 @@
 	@extend %box;
 }
 .quoteGroup＿item{
+	transition: all .6s;
+	@media screen and (min-width: $mq1024) {
+		&:hover{
+			transform: translateY(-1rem);
+		}
+	}
 	.card {
     position: relative;
     display: flex;
