@@ -1,8 +1,8 @@
-// --------base--------
-@import "base/reset.scss";
-@import "base/variable.scss";
-@import "base/mixin.scss";
-@import "base/base.scss";
+// --------config--------
+@import "config/reset.scss";
+@import "config/variable.scss";
+@import "config/mixin.scss";
+@import "config/base.scss";
 @import "utilities/utilities.scss";
 
 
@@ -20,6 +20,9 @@
 @import "helpers/title.scss";
 @import "helpers/list.scss";
 @import "helpers/clearfix.scss";
+@import "helpers/position.scss";
+@import "helpers/hidden.scss";
+@import "helpers/gradient.scss";
 
 
 
@@ -46,3 +49,4 @@
 @import "utilities/image.scss";
 @import "utilities/size.scss";
 @import "utilities/text.scss";
+@import "utilities/truncation.scss";
