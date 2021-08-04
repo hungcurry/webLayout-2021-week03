@@ -2,9 +2,10 @@
 /* heroImage
 ---------------------------*/
 .heroImage {
-	background-image: url("../../assets/images/index/banner1920.jpg");
+	background-image: url("../../assets/images/index/banner-375.jpg");
   height: 39.4rem;
   @media screen and (min-width: $mq768) {
+		background-image: url("../../assets/images/index/banner1920.jpg");
     height: 84rem;
   }
   &＿inner {
@@ -77,17 +78,17 @@
 			height: 32rem;
 		}
 		&.optical{
-			background-image: url("../../assets/images/index/product-1.png");
+			background-image: url("../../assets/images/index/product-10.jpg");
 		}
 		&.sunglasses{
-			background-image: url("../../assets/images/index/product-2.png");
+			background-image: url("../../assets/images/index/product-11.jpg");
 			transition: all .3s;
 			&:hover{
-				background-image: url("../../assets/images/index/product-2-color.png");
+				background-image: url("../../assets/images/index/product-11-color.jpg");
 			}
 		}
 		&.functional {
-			background-image: url("../../assets/images/index/product-3.png");
+			background-image: url("../../assets/images/index/product-12.jpg");
 		}
 	}
 	.txt{
@@ -163,10 +164,10 @@
 		}
 	}
 	&.Double{
-		background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png");
+		background-image: url("../../assets/images/index/product-13.jpg");
 	}
 	&.YOUTH{
-		background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
+		background-image: url("../../assets/images/index/product-14.jpg");
 	}
 }
 /*-------------------------*/
